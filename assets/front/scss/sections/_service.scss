@@ -1,0 +1,56 @@
+/*=========================
+** Service area
+=========================*/
+.service-area{
+    padding-top: 107px;
+    padding-bottom: 87px;
+    .section-title{
+        h2{
+            span{
+                color: $base-color;
+            }
+        }
+    }
+    .single-service-box{
+        padding: 30px;
+        @include box-shadow(0,0,5px,rgba(0,0,0,0.1),false);
+        margin-bottom: 30px;
+        @include transition($transition);
+        &:hover{
+            background-color: $base-color;
+            .icon{
+                filter: brightness(.25);
+            }
+            .content{
+                h4{
+                    color: $hoverWhite;
+                }
+                p{
+                    color: $hoverWhite;
+                }
+            }
+        }
+        .icon{
+            margin-bottom: 27px;
+            display: inline-block;
+            width: 60px;
+            height: 60px;
+            border: 1px dashed #000;   
+            border-radius: 50%;
+            line-height: 50px;
+             @include transition($transition);
+        }
+        .content{
+            h4{
+                text-transform: uppercase;
+                margin-bottom: 17px;
+                   @include transition($transition);
+            }
+            p{
+                margin-bottom: 0;
+                   @include transition($transition);
+            }
+        }
+
+    }
+}

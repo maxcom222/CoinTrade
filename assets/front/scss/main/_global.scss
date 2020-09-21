@@ -1,0 +1,117 @@
+/*====================
+** Global Scss
+====================*/
+
+.form-element {
+    position: relative;
+    .icon {
+        position: absolute;
+        left: 7px;
+        top: 0;
+        display:  inline-block;
+        font-size: 25px;
+        color: #777;
+        line-height: 40px;
+        @include transition(.5s ease-in);
+    }
+    input[type=text] {
+        padding: 10px 35px;
+        border: 1px solid #ddd;
+        background:  transparent;
+        width: 100%;
+        color: $heading-color;
+        transition: .5s ease-in;
+        margin-bottom: 20px;
+        &:focus {
+            border-color: $base-color;
+            input[type=text]{
+                border-color: $base-color;
+            }
+            .form-element .icon{
+                color: $base-color;
+            }
+        }
+    }
+    input[type=email]{
+        @extend input[type=text];
+    }
+}
+ input[type=submit] {
+        padding:  10px 25px;
+        border:  none;
+        background:  $base-color;
+        color: $white;
+        margin-top: 20px;
+        @include transition(.5s ease-in);
+         &:hover{
+            background:  rgba(40, 143, 235,.8);
+         }
+    }
+.back-to-top {
+    position:  fixed;
+    width:  40px;
+    height:  40px;
+    font-size:  20px;
+    text-align:  center;
+    line-height:  40px;
+    background:  $base-color;
+    right:  30px;
+    bottom: 30px;
+    cursor:  pointer;
+    color: $white;
+    z-index: 2;
+    border-radius: 50%;
+}
+.slicknav_menu{
+    display: none;
+}
+.boxed-btn{
+    display: inline-block;
+    padding: 15px 40px;
+    border-radius:25px;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+.section-title{
+        margin-bottom: 57px;
+    h2{
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        span{
+            color: $base-color;
+        }
+    }
+    p{
+        margin-bottom: 0;
+    }
+}
+input[type=text],
+input[type=email],
+input[type=tel],
+input[type=url],
+input[type=password],
+input[type=number],
+textarea{
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+}
+.breadcumb-area{
+    padding-top: 45px;
+    padding-bottom: 57px;
+    background-color: $secondary-color;
+    h2{
+        color: $white;  
+        text-transform: uppercase;
+        margin-bottom: 0
+    }
+    p{
+        margin-bottom: 0;
+        color: $white;
+        a{
+            color: $base-color;
+        }
+    }
+}

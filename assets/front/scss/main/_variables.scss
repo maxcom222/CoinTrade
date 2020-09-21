@@ -1,0 +1,52 @@
+$bootstrap-sass-asset-helper: false !default;
+
+/*====================
+** Variable Scss
+====================*/
+
+//== Template Main Color
+$base-color: #F6A724;
+$secondary-color: #292D4F;
+
+/*basic color*/
+$white: #fff;
+$black :#000;
+//hover white color;
+$hoverWhite : #fdfdfd;
+/*section background color*/
+$section-bg-color: #E6E6E9;
+/*border color*/
+$b-color: #ddd;
+/*heading color*/
+$heading-color: #292D4E;
+
+//== Typography
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800|Roboto:400,500,700,900');
+
+$base-font : 'Roboto', sans-serif;
+$secondary-font: 'Open Sans', sans-serif;
+$base-font-size:          16px !default;
+$font-size-h1:            48px !default; 
+$font-size-h2:            36px !default; 
+$font-size-h3:            24px !default; 
+$font-size-h4:            21px !default; 
+$font-size-h5:            18px !default; 
+$font-size-h6:            16px !default; 
+
+
+//** Unit-less `line-height` for use in components like buttons.
+$line-height:        1.6 !default; // 24/15
+
+
+
+// border-radius
+$border-radius-base:        5px !default;
+$border-radius-large:       25px !default;
+$border-radius-small:       3px !default;
+$border-radius-circle:      50% !default;
+
+
+//  transition
+$transition: all .5s ease-in;
+$transition-long: all .9s ease-in;
+

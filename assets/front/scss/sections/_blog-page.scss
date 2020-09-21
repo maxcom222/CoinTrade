@@ -1,0 +1,80 @@
+/*==============================
+** Blog Page
+==============================*/
+.blog-page{
+    padding-top: 120px;
+    padding-bottom: 120px;
+        .single-blog-post{
+        border: 1px solid #ddd; 
+        margin-bottom: 30px;
+        .content{
+            padding: 30px;
+            h4{
+                text-transform: uppercase;
+                margin-bottom: 17px;
+            }
+            p{
+                margin-bottom: 0;
+            }
+        }
+        .post-meta{
+            margin:  0 30px;
+            border-top: 1px solid #ddd;
+            ul{
+                padding: 20px 0;
+                li{
+                    display: inline-block;
+                    color: $heading-color;
+                    font-weight: 600;
+                    padding-right: 10px;
+                    i{
+                        color: #cccccc;
+                    }
+                    &:last-child{
+                        float: right;
+                        padding-right:0; 
+                    }
+                }
+            }
+        }
+    }
+    .page-navigation{
+        margin-top: 30px;
+        li{
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            font-weight: 600;
+            border: 1px solid #ddd;
+            margin-left: -5px;
+            cursor: pointer;
+            @include transition($transition);
+            &:first-child{
+                border-top-left-radius: 25px;
+                border-bottom-left-radius: 25px;
+            }
+            &:last-child{
+                border-top-right-radius: 25px;
+                border-bottom-right-radius: 25px;
+                border-bottom-right-radius: 25px;
+            }
+            a{
+                color: $heading-color;
+                @include transition($transition);
+            }
+            &.active{
+                background-color: $base-color;
+                a{
+                    color: $white;
+                }
+            }
+            &:hover{
+                 background-color: $base-color;
+                a{
+                    color: $white;
+                } background-color: $base-color;
+            }
+        }
+    }
+}

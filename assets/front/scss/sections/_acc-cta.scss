@@ -1,0 +1,38 @@
+/*==============================
+** Account Call To Action Area
+==============================*/
+
+.acc-cta-area{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: $base-color;
+    .boxed-btn{
+        margin: 0;
+        color: $white;
+        background-color: $secondary-color;
+        @include transition($transition);
+        padding: 13px 40px;
+        border: 2px solid transparent;
+        @include box-shadow(0 ,0 ,5px ,$secondary-color ,true);
+        &:hover{
+            background-color: transparent;
+            border: 2px solid $secondary-color;
+        }
+        &.blank{
+            padding: 13px 40px;
+            margin-right: 20px;
+            background-color: transparent;
+            border: 2px solid $secondary-color;
+            color: $white;
+            @include transition($transition);
+            &:hover{
+                background-color: $secondary-color;
+            }
+        }
+    }
+    h2{
+        color: $white;
+        text-transform: uppercase;
+        margin: 0;
+    }
+}

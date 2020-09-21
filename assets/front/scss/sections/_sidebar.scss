@@ -1,0 +1,154 @@
+/*==============================
+** Sidebar 
+==============================*/
+.sidebar{
+    padding-bottom:90px; 
+    .widget{
+        &.category{
+            .widget-body{
+                li{
+                    span{
+                        float: right;
+                        display: inline-block;
+                        width: 25px;
+                        height: 25px;
+                        background-color: #ddd;
+                        line-height: 20px;
+                        border-radius: 50%;
+                        color: $secondary-color;
+                        margin-right: 10px;
+                    }
+                }
+            }
+
+        }
+        &.search{
+            .widget-body{
+                input{
+                    border: 1px solid #ddd;
+                    border-right: 0;
+                    border-top-left-radius: 25px;
+                    border-bottom-left-radius: 25px;
+                    &:focus{
+                        outline: none;
+                        border: 1px solid #ddd;
+                        box-shadow: 0 0 0px #fff;
+                    }
+                }
+                button[type=submit]{
+                    padding: 10px 15px;
+                    background-color: $base-color;
+                    border: 1px solid transparent;
+                    border-top-right-radius: 25px;
+                    border-bottom-right-radius: 25px;
+                    @include transition($transition);
+                    padding-top: 12px;
+                    &:hover{
+                        background-color: $secondary-color;
+                    }
+                    i{
+                        padding-top: 5px;
+                        font-size: 23px;
+                        line-height: 100%;
+                        
+                    }
+                }
+            }
+        }
+        &.popular-post{
+            .widget-body{
+                padding-bottom: 24px;
+                li{
+                    border: none;
+                    padding: 0;
+                    padding-bottom: 6px;
+                    
+                    &:hover{
+                        h5{
+                            color: $base-color;
+                        }
+                    }
+                    h5{
+                        cursor: pointer;
+                        @include transition($transition);
+                    }
+                    &:last-child{
+                        border: none;
+                    }
+                    &:hover{
+                        background-color: transparent;
+                        margin-left: 0;
+                    }
+                    h5{
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+        &.tags{
+            .widget-body{
+                padding-top: 25px;
+                padding-bottom: 25px;
+                li{
+                    display: inline-block;
+                    border: none;
+                    padding: 10px;
+                    margin: 5px;   
+                    background-color: $base-color;
+                    @include transition($transition);
+                    &:hover{
+                        background-color: $secondary-color;
+                    }
+                    &:last-child{
+                        border: none;
+                    }
+                    a{
+                        color: $white;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+        border: 1px solid #f1f1f1;
+        margin-bottom: 30px;
+        .widget-title{
+            background-color: $secondary-color;
+            padding: 20px;
+            h4{
+                margin-bottom: 0;
+                text-transform: uppercase;
+                color: $white;
+            }
+        }
+        .widget-body{
+            padding: 20px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            li{
+                padding: 10px 0;
+                border-top: 1px solid #f1f1f1;
+                @include transition($transition);
+                &:last-child{
+                    border-bottom: 1px solid #f1f1f1;
+                }
+                a{
+                    @include transition($transition);
+                }
+                i{
+                    padding-right: 10px;
+                    @include transition($transition);
+                }
+                &:hover{
+                    background-color: $base-color;
+                    margin-left: 10px;
+                    a{
+                        color: $white;
+                    }
+                    i{
+                        color: $white;
+                    }
+                }
+            }    
+        }
+    }
+}

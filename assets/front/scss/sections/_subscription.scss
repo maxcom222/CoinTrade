@@ -1,0 +1,45 @@
+/*=========================
+** Subscription section
+=========================*/
+.subscription-area{
+    padding-top: 120px;
+    padding-bottom: 160px;
+    position: relative;
+    &.subscription-bg{
+        background-image: url(../img/subscription-bg.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    .footer-logo{
+        margin-bottom: 50px;
+    }
+    .subscription-form{
+        h2{
+            color: $white;
+            span{
+                color: $base-color ;
+            }
+        }
+        input{
+            background-color: rgba(230, 230, 233, 0.5);
+            color: $white;
+             @include placeholder-color($white);
+             border-radius: 25px;
+        }
+        input[type=submit]{
+            margin-top: 0;
+            background-color: $base-color;
+            @include transition($transition);
+            @include box-shadow(0 ,0 ,5px ,$base-color ,true);
+            border: 2px solid $base-color;
+            cursor: pointer;
+            padding: 8px 33px;
+            border-radius: 25px;
+            text-transform: uppercase;
+            &:hover{
+                background-color: transparent;
+                border-color: $base-color;
+            }
+        }
+    }
+}

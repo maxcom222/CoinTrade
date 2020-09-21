@@ -1,0 +1,48 @@
+
+/*==============================
+** Navbar Area
+==============================*/
+.navbar-area{
+    @include box-shadow(0px, 0px, 15px, #000,false);
+    height: 80px;
+    padding-top: 14px;
+    background-color: $secondary-color;
+    &.nav-fixed{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        z-index: 9;
+        padding: 0;
+        padding-bottom: 12px;
+    }
+    .logo {
+        display:  block;
+        padding-top: 10px;
+    }
+    ul{
+        padding-top: 15px;
+        li{
+            display: inline-block;
+            @include transition($transition);
+                border-radius: 25px;
+            &.active{
+                    background-color: $base-color;
+                }
+            &:hover{
+                a{
+                    background-color: $base-color;
+                    @include transition($transition);
+                }
+            }
+            a{
+                color: $white;
+                text-transform: uppercase;
+                display: inline-block;
+                padding: 10px 20px;
+                border-radius: 25px;
+            }
+        }
+    }
+}

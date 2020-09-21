@@ -1,0 +1,102 @@
+
+/*==============================
+** Team Member Area
+==============================*/
+.team-area{
+    position: relative;
+    z-index: 1;
+    padding-top: 110px;
+    padding-bottom: 115px;
+    &.team-area-bg{
+        background-image: url(../img/team-area-bg.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    &:after{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        content: '';
+        background: $secondary-color;
+        z-index: -1;
+        opacity: .9;
+    }
+    .section-title{
+        h2{
+            color: $white;
+            span{
+                color: $base-color;
+            }
+        }
+        p{
+            color: $white;
+        }
+    }
+    .single-team-box{
+        .content{
+            margin-top: 37px;
+            h4{
+                color: $white;
+                text-transform: uppercase;
+                margin-bottom: 10px; 
+                text-align: center;
+            }
+            .post{
+                text-transform: uppercase;
+                display: block;
+                text-align: center;
+                color: $white;
+            }
+        }
+        .team-pic{
+            position: relative;
+            display: inline-block;
+            border-radius: 50%;
+            border: 50px solid rgba(246, 167, 36,.1);
+            z-index: 1;
+            &:after{
+                position: absolute;
+                content: '';
+                left: -10%;
+                top: -10%;
+                width: 120%;
+                height: 120%;
+                border-radius: 50%;
+                border: 1px dashed $white;
+                z-index: -1;
+            }
+            img{
+                border-radius: 50%;
+                border: 3px solid $base-color;
+            }
+            .social-icons{
+                position: absolute;
+                left: 50%;
+                bottom: -39px;
+                @include transform(translate(-50%));
+                li{
+                    position: relative;
+                    display: inline-block;
+                    a{
+                        display: inline-block;
+                        width: 35px;
+                        height: 35px;
+                        background-color: $base-color;
+                        border-radius: 50%;
+                        text-align: center;
+                        line-height: 35px;
+                        color: $white;
+                        margin:1px;
+                        @include transition($transition);
+                        &:hover{
+                            background-color: $secondary-color;
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

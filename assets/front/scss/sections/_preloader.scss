@@ -1,0 +1,54 @@
+/*===========================
+    Preloader 
+===========================*/
+.preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 99;
+    display: table;
+}
+
+.preloader-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+.preloader-img{
+    position: relative;
+    display: inline-block;
+    padding: 20px;
+    border-radius: 50%;
+}
+.preloader-img:before {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    content: '';
+    border-radius: 50%;
+    animation: rotating 2s linear infinite;
+}
+.preloader-img img{
+    animation: rotatingTWo 2s linear infinite;
+}
+@keyframes rotating {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotatingTWo {
+  0% {
+    transform: rotatey(360deg);
+  }
+  100% {
+    transform: rotatey(0deg);
+  }
+}

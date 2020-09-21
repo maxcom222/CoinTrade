@@ -1,0 +1,90 @@
+/*=========================
+** Testimonial Area
+=========================*/
+.testimonial-area{
+    padding-top: 108px;
+    padding-bottom: 120px;
+    .testimonial-wrapper{
+        .testimonial-carousel{
+            .owl-nav div{
+                position: absolute;
+                left: 35%;
+                top: 22%;
+                font-size: 40px;
+                color: $secondary-color;
+                @include transition($transition);
+                &:hover{
+                    color: $base-color;
+                }
+                &.owl-next{
+                    left: auto;
+                    right: 35%;
+                }
+            }
+        }
+        @include box-shadow(0,0,15px,#DEDEDE,false);
+        border-radius: 5px;
+        position: relative;
+        z-index: 1;
+        background-color: $white;
+        &:before{
+            position: absolute;
+            content: "";
+            width: 98%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            background: rgba(230, 230, 233,.40);  
+            z-index: -1;
+           @include transform(rotate(.4deg) translateX(10px) translateY(0px) skewX(-1deg) skewY(-2deg));
+        }
+         &:after{
+            position: absolute;
+            content: "";
+            width: 98%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            background: rgba(230, 230, 233,.40);  
+            z-index: -1;
+            @include transform( rotate(-0.4deg) translateX(10px) translateY(0px) skewX(1deg) skewY(2deg));
+        }
+        .testimonial-carousel{
+            background-color: $white;
+        }
+    }
+
+    .single-testimonial-item{
+        padding: 40px 100px ;
+        .img-thumb{
+            display: inline-block;
+            border-radius: 50%;
+            img{
+                display: inline-block;
+                border-radius: 50%;
+                border: 3px solid $base-color;
+            }
+        }
+        .content{
+            margin-top: 26px;
+            h4{
+                text-transform: uppercase;
+                margin-bottom: 8px;
+            }
+            .rating{
+                li{
+                    display: inline-block;
+                    color: $base-color;
+                }
+            }
+            .description{
+                margin-top: 30px;
+                margin-bottom: 0;
+                p{
+                    margin-bottom: 0;
+                }
+            }
+        }
+        
+    }
+}

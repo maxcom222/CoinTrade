@@ -1,0 +1,33 @@
+/*=========================
+** Investment Cta Area
+=========================*/
+.investment-cta-area{
+    padding-top: 60px;
+    padding-bottom: 40px;
+    position: relative;
+    &.invesment-cta-bg{
+        background-image: url(../img/investment-cta-bg.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    h4{
+        color: $white;
+        text-transform: uppercase;
+    }
+    .boxed-btn{
+        background-color: $base-color;
+        color: $white;
+        margin-top: 0;
+        @include transition($transition);
+        border: 2px solid transparent;
+        @include box-shadow(0 ,0 ,5px ,$base-color ,true);
+        i{
+            color: $white;
+             @include transition($transition);
+        }
+        &:hover{
+            background-color: transparent;
+            border-color: $base-color;
+        }
+    }
+}

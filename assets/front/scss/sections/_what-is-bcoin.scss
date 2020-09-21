@@ -1,0 +1,24 @@
+
+/*=========================
+** What Is BCoin Area
+=========================*/
+.what-is-bcoin{
+    background-color: $section-bg-color;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    h2{
+        color: $heading-color;
+        text-transform: uppercase;
+        span{
+            color: $base-color;
+        }
+    }
+    .boxed-btn{
+        background-color: $base-color;
+        color: $white;
+        @include transition($transition);
+        &:hover{
+            background-color: $secondary-color;
+        }
+    }
+}

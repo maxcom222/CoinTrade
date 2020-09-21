@@ -1,0 +1,41 @@
+
+/*==============================
+** Main Scss
+==============================*/
+@import "main/_variables";
+@import "main/_mixins";
+@import "main/_global";
+
+/*===============================
+** Normalize/Reset Scss File
+===============================*/
+@import "main/_normalize";
+
+/*=========================
+** Sections Scss File
+=========================*/
+@import "sections/_navbar.scss";
+@import "sections/_header.scss";
+@import "sections/_acc-cta.scss";
+@import "sections/_what-is-bcoin.scss";
+@import "sections/_service.scss";
+@import "sections/_team-area.scss";
+@import "sections/_investor-area.scss";
+@import "sections/_investment_cta.scss";
+@import "sections/_testimonial.scss";
+@import "sections/_blog-section.scss";
+@import "sections/_contact-section.scss";
+@import "sections/_time-line.scss";
+@import "sections/_faq-section.scss";
+@import "sections/_clients-logo.scss";
+@import "sections/_subscription.scss";
+@import "sections/_footer.scss";
+@import "sections/_sidebar.scss";
+@import "sections/_blog-page.scss";
+@import "sections/_blog-single.scss";
+@import "sections/_preloader.scss";
+
+
+/*=========================
+** Responsive Scss File
+=========================*/

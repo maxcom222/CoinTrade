@@ -1,0 +1,90 @@
+/*=========================
+** Faq Section
+=========================*/
+.faq-area{
+    padding-top: 108px;
+    padding-bottom: 100px;
+    
+.panel-default{
+    .panel-body {
+        padding: 8px 30px 26px 30px;
+    }
+    .panel-heading {
+        color: $white;
+        background-color: $white;
+        border-color: $white;
+        padding: 5px 0;
+        margin-bottom: 20px;
+        @include box-shadow(0,0,10px,rgba(0, 0, 0,.10),false);
+        @include user-select(none);
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+        h4{
+                margin-bottom: 0;
+            }
+        a{
+            display: block;
+            padding: 10px 15px;
+            color: $heading-color;
+            @include transition($transition);
+            &:focus{
+                text-decoration: none;
+            }
+            
+            &:after{
+            content: "";
+            position: relative;
+            display: inline-block;
+            font-weight: 400;
+            float: left;
+            font-family: 'icofont';
+            @include transition(transform .25s linear);
+                margin-right: 20px;
+                color: $base-color;
+                width: 40px;
+                height: 40px;
+                text-align: center;
+                line-height: 40px;
+                background: $secondary-color;
+                border-radius: 25px;
+                top: -6px;
+                left: -5px;
+            }
+            &[aria-expanded="true"]{
+                color: $base-color;
+                &:after{
+                    content: "\f074";
+                    @include transform(rotate(180deg));
+                }
+                @include transition($transition);
+            }
+            &[aria-expanded="false"]:after {
+                content: "\f0a5";
+                @include transform(rotate(90deg));
+                @include transition($transition);
+            }
+        }    
+    }
+    .accordion-option {
+    width: 100%;
+    float: left;
+    clear: both;
+    margin: 15px 0;
+        .title {
+        font-size: 21px;
+        font-weight: bold;
+        float: left;
+        padding: 0;
+        margin: 0;
+        }
+        .toggle-accordion {
+        float: right;
+        font-size: 16px;
+        color: $heading-color;
+        }
+    }
+}
+
+}

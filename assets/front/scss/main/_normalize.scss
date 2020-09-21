@@ -1,0 +1,129 @@
+/*====================
+** Normalize Scss
+====================*/
+
+html {
+    font-family: $base-font;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+ 
+body {
+    font-family: $secondary-font;
+    font-size: $base-font-size; /*  base font size  15px= 1em*/
+    margin: 0;
+    color: $heading-color;
+}
+
+
+// Typography
+h1 {
+    font-size: $font-size-h1;
+    line-height: 1.0833333333333333;
+    margin-bottom: 0.5416666666666666em;
+}
+h2 {
+    font-size: $font-size-h2;
+    line-height: 1.4444444444444444;
+    margin-bottom: 0.7222222222222222em;
+}
+h3 {
+    font-size: $font-size-h3;
+    line-height: 1.0833333333333333;
+    margin-bottom: 1.0833333333333333em;
+}
+h4 {
+    font-size: $font-size-h4;
+    line-height: 1.2380952380952381;
+    margin-bottom: 1.2380952380952381em;
+}
+h5 {
+    font-size: $font-size-h5;
+    line-height: 1.4444444444444444;
+    margin-bottom: 1.4444444444444444em;
+}
+h6 {
+    font-size: $font-size-h6;
+    line-height: 1.625;
+    margin-bottom: 1.625em;
+}
+h1, h2, h3, h4, h5, h6 {
+    color:  $heading-color;
+    font-weight: 700;
+    font-family: $base-font;
+}
+p {
+    font-size: $base-font-size;
+    color:  $heading-color;
+    margin: 0 0 1.625em;
+    line-height: 1.625;
+    -webkit-hyphens: auto;
+       -moz-hyphens: auto;
+        -ms-hyphens: auto;
+            hyphens: auto;
+}
+a {
+    color: $heading-color;
+}
+a,a:hover,a:focus,a:active {
+    text-decoration: none;
+    outline: none;
+}
+
+a i {
+    padding: 0 2px;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/*input and button type focus outline disable*/
+ 
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="number"]:focus,
+textarea:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus,
+select:focus{
+    outline: none;
+}
+
+
+ 
+/**
+ * 5.0 - Alignments
+ */
+ 
+.alignleft {
+    float: left;
+}
+ 
+.alignright {
+    float: right;
+}
+ 
+.aligncenter {
+    clear: both;
+    display: block;
+    margin: 0 auto 1.75em;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ a{
+    text-decoration:none;
+ }
+
+

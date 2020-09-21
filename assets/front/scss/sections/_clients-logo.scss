@@ -1,0 +1,15 @@
+/*=========================
+** Clients Logo
+=========================*/
+.clients-logo-carousel{
+    padding: 60px 0;
+    background-color: #E6E6E9;
+    .logo-carousel{
+        .single-logo-item{
+            @include transition($transition);
+            &:hover{
+                @include box-shadow(0,0,5px,rgba(0,0,0,0.35),false);
+            }
+        }
+    }
+}

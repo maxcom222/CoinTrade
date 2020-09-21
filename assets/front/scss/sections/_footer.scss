@@ -1,0 +1,33 @@
+/*=========================
+** Footer Area
+=========================*/
+.footer-area{
+    padding-bottom: 37px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    .copyright-text{
+        color: #e6e6e9;
+        margin-bottom: 0;
+    }
+    .footer-social{
+        li{
+            display: inline-block;
+            a{
+                color: $white;
+                display: inline-block;
+                width: 30px;
+                height: 30px;
+                line-height: 30px;
+                border-radius: 50%;
+                text-align: center;
+                @include transition($transition);
+                &:hover{
+                    background-color: $base-color;
+                }
+            }
+        }
+    }
+}

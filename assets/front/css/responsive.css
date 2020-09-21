@@ -1,0 +1,338 @@
+/*bootstrap 4 media queries*/
+
+
+
+/*Small devices (landscape phones, 576px and up)*/ 
+@media (max-width: 576px) { 
+/*slick nav */
+    .slicknav_menu{
+        display: block;
+    }
+    .slicknav_menu .slicknav_menutxt {
+        display: none;
+    }
+
+    .slicknav_menu {
+        background: transparent;
+        position: absolute;
+        right: 3%;
+        top: 23px;
+        z-index: 9;
+        width: 94%;
+        text-align: center;
+    }
+    .slicknav_btn {
+        background: transparent;
+        text-shadow: none;
+        margin-bottom: 40px;
+    }
+
+    .slicknav_menu .slicknav_icon-bar {
+        background: #fff;
+        box-shadow: none;
+        width: 30px;
+        height: 3px;
+        margin-bottom: 5px;
+    }
+    .slicknav_menu.nav-fixed {
+        position: fixed;
+        z-index: 99;
+        top: 10px;
+    }
+    .slicknav_nav {
+        width: 100%;
+    }
+    ul.slicknav_nav {
+        background: #2F313A;
+    }
+    li.slicknav_collapsed.slicknav_parent a i {
+        display: none;
+    }
+    .slicknav_nav .slicknav_row,
+    .slicknav_nav a {
+        margin: 0;
+        border-radius: 0;
+        text-transform: uppercase;
+    }
+    .slicknav_nav a:hover,
+    .slicknav_nav .slicknav_row:hover{
+        background: #F6A724;
+        color: #fff;
+    }
+    .slicknav_btn.slicknav_open {
+        transform: rotate(30deg);
+    }
+    .slicknav_btn .slicknav_icon-bar{
+        transition: .3s;
+    }
+    .slicknav_btn.slicknav_open .slicknav_icon-bar:first-child {
+        display: none;
+    }
+
+    .slicknav_btn.slicknav_open .slicknav_icon-bar:nth-child(2) {
+        transform: rotate(110deg);
+    }
+
+    .slicknav_btn.slicknav_open .slicknav_icon-bar:nth-child(3) {
+        transform: rotate(9deg);
+        margin-top: -7px;
+    }
+    .slicknav_menu li a i {
+        display: none;
+    }
+    /*slick nav end*/
+    #main-menu{
+        display: none;
+    }
+    .blog-single-page .content .post-meta {
+        font-size: 80%;
+    }
+
+    .blog-single-page .social-share ul {
+        margin-top: 30px;
+    }
+
+    .blog-single-page .social-share ul li {
+        margin-left: 0px;
+    }
+
+    .footer-area .copyright-text {
+        font-size: 80%;
+    }
+
+    ul.footer-social {
+        display:  block;
+        text-align: center;
+    }
+
+    .media.mt-3.single-comment-item.reply {
+        margin-left: -100px;
+    }
+    .acc-cta-area .boxed-btn,
+    .header-area .header-area-inner .boxed-btn,
+    .investment-cta-area .boxed-btn,
+    .contact-area .contact-wrapper .contact-form input[type=submit]{
+        padding: 10px 25px;
+    }
+
+
+    .acc-cta-area .boxed-btn.blank {
+        padding: 10px 25px;
+    }
+    .team-area .single-team-box .team-pic .social-icons {
+        position: absolute;
+        left: 30%;
+        bottom: -40px;
+        -ms-transform: translate(-50%);
+        -webkit-transform: translate(-50%);
+        transform: translate(-15%);
+    }
+    .testimonial-area .testimonial-wrapper .testimonial-carousel .owl-nav div {
+        left: 0%;
+        top: 15%;
+    }
+    .testimonial-area .testimonial-wrapper .testimonial-carousel .owl-nav div.owl-next {
+        right: 0;
+    }
+    .road-map-section{
+        display: none;
+    }
+    .header-area {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    .faq-area .panel-default .panel-heading a:after{
+        display: none;
+    }
+    .testimonial-area .single-testimonial-item{
+        padding: 20px;
+    }
+    .testimonial-area .testimonial-wrapper .testimonial-carousel .owl-nav div{
+        display: none !important;
+    }
+    .testimonial-area .testimonial-wrapper .testimonial-carousel .owl-nav div.owl-next{
+        display: none !important;
+    }
+    .content-for-template {
+      height: auto;
+    }
+ }
+
+/*Medium devices (tablets, 768px and up)*/ 
+@media (max-width: 768px) { 
+     /*slick nav */
+    .slicknav_menu{
+        display: block;
+    }
+    .slicknav_menu .slicknav_menutxt {
+        display: none;
+    }
+
+    .slicknav_menu {
+        background: transparent;
+        position: absolute;
+        right: 3%;
+        top: 23px;
+        z-index: 9;
+        width: 94%;
+        text-align: center;
+    }
+    .slicknav_btn {
+        background: transparent;
+        text-shadow: none;
+        margin-bottom: 40px;
+    }
+
+    .slicknav_menu .slicknav_icon-bar {
+        background: #fff;
+        box-shadow: none;
+        width: 30px;
+        height: 3px;
+        margin-bottom: 5px;
+    }
+    .slicknav_menu.nav-fixed {
+        position: fixed;
+        z-index: 99;
+        top: 10px;
+    }
+    .slicknav_nav {
+        width: 100%;
+    }
+    ul.slicknav_nav {
+        background: #2F313A;
+    }
+    li.slicknav_collapsed.slicknav_parent a i {
+        display: none;
+    }
+    .slicknav_nav .slicknav_row,
+    .slicknav_nav a {
+        margin: 0;
+        border-radius: 0;
+        text-transform: uppercase;
+    }
+    .slicknav_nav a:hover,
+    .slicknav_nav .slicknav_row:hover{
+        background: #F6A724;
+        color: #fff;
+    }
+    .slicknav_btn.slicknav_open {
+        transform: rotate(30deg);
+    }
+    .slicknav_btn .slicknav_icon-bar{
+        transition: .3s;
+    }
+    .slicknav_btn.slicknav_open .slicknav_icon-bar:first-child {
+        display: none;
+    }
+
+    .slicknav_btn.slicknav_open .slicknav_icon-bar:nth-child(2) {
+        transform: rotate(110deg);
+    }
+
+    .slicknav_btn.slicknav_open .slicknav_icon-bar:nth-child(3) {
+        transform: rotate(9deg);
+        margin-top: -7px;
+    }
+    .slicknav_menu li a i {
+        display: none;
+    }
+    /*slick nav end*/
+    nav.navbar-area.nav-fixed #main-menu {
+        display: none;
+    }
+    .what-is-bcoin-img {
+        margin-top: 50px;
+    }
+    .team-area .single-team-box .team-pic .social-icons li a{
+        margin: 0;
+    }
+    .team-area .single-team-box{
+        margin-bottom: 30px;
+    }
+    .team-area{
+        padding-bottom:85px;
+    }
+    .single-investor-box {
+        margin-bottom: 80px;
+    }
+    .testimonial-area .testimonial-wrapper .testimonial-carousel .owl-nav div{
+        left: 30%;
+    }
+    .testimonial-area .testimonial-wrapper .testimonial-carousel .owl-nav div.owl-next{
+        right: 30%;
+    }
+    .blog-area .single-blog-post {
+        margin-bottom: 30px;
+    }
+    .blog-area{
+        padding-bottom: 90px;
+    }
+    .Investors-area {
+        padding-bottom: 40px;
+    }
+    .contact-area .img-wrapper {
+        display: none;
+    }
+    .contact-area:after{
+        display: none;
+    }
+    .contact-area .contat-section-right-bg{
+        width: 100%;
+    }
+    .road-map-section .roadmap-wrapper .event1Bubble{
+        width: 225px;
+    }
+    .road-map-section .roadmap-wrapper .event2Bubble{
+        width: 225px;
+    }
+    .road-map-section .roadmap-wrapper .event1Bubble{
+        left: -70px;
+    }
+    .road-map-section .roadmap-wrapper .event1Bubble:before,
+    .road-map-section .roadmap-wrapper .event1Bubble:after{
+        left: 68px;
+    }
+    .acc-btn-right {
+        text-align:  left;
+        margin-top: 30px;
+    }
+    .investment-btn-right {
+        text-align: left;
+    }
+    #main-menu{
+        display: none;
+    }
+    .blog-page .page-navigation {
+        margin-bottom: 60px;
+    }
+    .sidebar{
+        padding-bottom:0;
+    }
+    .blog-page{
+        padding-bottom: 90px;
+    }
+    .comment-form input[type=submit] {
+        margin-bottom: 60px;
+    }
+    .content-for-template {
+      height: auto;
+    }
+    .register-page{
+        margin-bottom: 50px;
+    }
+ }
+
+/*Large devices (desktops, 992px and up)*/ 
+@media (min-width: 992px) {
+	.content-for-template {
+	height: auto; 
+	}
+ }
+
+/*Extra large devices (large desktops, 1200px and up)*/ 
+@media (min-width: 1200px) { 
+.content-for-template {
+	height: auto; 
+	}
+    
+}

@@ -1,0 +1,44 @@
+/*====================
+** Header Area
+====================*/
+.header-area{
+    position: relative;
+    background-color: #292d4e;
+    padding-top: 210px;
+    padding-bottom: 215px;
+    &.header-bg{
+        background-image: url(../img/header-bg.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    .header-img{
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: auto;
+        height: auto;
+        z-index: 1;
+    }
+    .header-area-inner{
+        h1{
+            color: $white;
+            text-transform: uppercase;
+            font-size: 40px;
+        }
+        p{
+            color: $white;
+        }
+        .boxed-btn{
+            background-color: $base-color;
+            color: $white;
+            padding: 15px 40px;
+            @include transition($transition);
+            border: 2px solid transparent;
+            @include box-shadow(0 ,0 ,5px ,$base-color ,true);
+            &:hover{
+                background-color: transparent;
+                border: 2px solid $base-color;
+            }
+        }
+    }
+}
